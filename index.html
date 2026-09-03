@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#ff8bd8" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Money Home" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>My Little Money Home</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="boot" class="boot">
+    <div class="boot-card">
+      <div class="winbar"><b>moneyhome.exe</b><span>_ □ ×</span></div>
+      <div class="boot-body"><div class="boot-stars">✦ 💿 ♡ ✦</div><div class="boot-logo">MY LITTLE<br>MONEY HOME</div><div class="loader"><i></i></div><small>loading your tiny universe...</small></div>
+    </div>
+  </div>
+
+  <div id="app" class="app">
+    <header class="app-head">
+      <button class="logo" data-route="home"><span>💌</span><b>moneyhome</b><em>.exe</em></button>
+      <div class="head-actions"><button id="sparkleBtn" class="chrome-btn" aria-label="sparkles">✨</button><button id="moreBtn" class="chrome-btn" aria-label="menu">☰</button></div>
+    </header>
+
+    <main id="main" class="main room-home">
+      <div id="roomBackdrop" class="room-backdrop"></div>
+      <section id="view" class="view"></section>
+    </main>
+
+    <nav id="bottomNav" class="bottom-nav" aria-label="Primary"></nav>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="confetti" class="confetti"></div>
+
+  <dialog id="modal" class="sheet">
+    <form method="dialog" class="sheet-card">
+      <div class="sheet-handle"></div>
+      <div class="sheet-head"><h2 id="modalTitle"></h2><button value="cancel" class="close-btn">×</button></div>
+      <div id="modalBody" class="sheet-body"></div>
+      <div id="modalActions" class="sheet-actions"><button value="cancel" class="btn ghost">cancel</button><button id="modalSave" value="default" class="btn hot">save ♡</button></div>
+    </form>
+  </dialog>
+
+  <input id="hiddenMediaInput" type="file" accept="image/*,.gif" hidden />
+  <script src="app.js"></script>
+</body>
+</html>
